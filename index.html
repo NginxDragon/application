@@ -4225,6 +4225,602 @@ Ybs Atas Nama .... mengeluhkan di tanggal .... jam ... melakukan transaksi ... d
 <!-- Konten A_P30-->
 </div>
 
+<div class="tab-pane fade" id="v-pills-Menu_A_P31" role="tabpanel" aria-labelledby="v-pills-Menu_A_P31-tab">
+<!-- Konten A_P31-->
+<h1 class="text-center">Delivery BBM - Cancel Order</h1>
+        <!-- Konten A_P31_Menu-->
+        <div class="card">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active" id="nav-A_P31_A-tab" data-toggle="tab" href="#nav-A_P31_A" role="tab" aria-controls="nav-A_P31_A" aria-selected="true">ROOTCAUSE</a>
+                  <a class="nav-item nav-link" id="nav-A_P31_B-tab" data-toggle="tab" href="#nav-A_P31_B" role="tab" aria-controls="nav-A_P31_B" aria-selected="false">TODOLIST</a>
+                  <a class="nav-item nav-link" id="nav-A_P31_C-tab" data-toggle="tab" href="#nav-A_P31_C" role="tab" aria-controls="nav-A_P31_C" aria-selected="false">TIKET</a>
+                </div>
+              </nav>
+        </div>
+        <!-- Konten A_P31_Menu-->
+
+        <!-- Konten A_P31_Isi-->
+        <div class="card">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-A_P31_A" role="tabpanel" aria-labelledby="nav-A_P31_A-tab">
+<!-- A_P31_A_konten -->    
+<div class="p-2 mb-2 bg-danger text-white text-center">ROOTCAUSE</div>
+<p id="A_P31_A1"></p>
+<script>
+const rootcauseA_P31 = {
+cause:`<p>Delivery BBM - Cancel Order</p>
+<p>Pelanggan sudah menghubungi sebelumnya untuk permintaan delivery BBM, sudah ada tiket, namun kemudian pelanggan menghubungi kembali meminta pesanan BBMnya dibatalkan
+</p>`,
+semuaCause : function() {return this.cause;}
+};
+document.getElementById("A_P31_A1").innerHTML = rootcauseA_P31.semuaCause();
+</script>
+<!-- CWC -->
+<div class="d-inline p-1  bg-danger text-white text-center" style="width: 100px;">CWC</div>
+<div class="container-fluid">
+<div class="row">
+<div class="list-group">
+<p class="list-group-item list-group-item-action flex-column align-items-start ">
+Demand - Layanan BBK - Delivery BBM - Cancel Order
+</p>
+</div>
+</div>
+</div>
+<!-- CWC -->
+<!-- A_P31_A_konten -->
+                </div>
+                <div class="tab-pane fade" id="nav-A_P31_B" role="tabpanel" aria-labelledby="nav-A_P31_B-tab">
+<!-- A_P31_B_konten -->    
+<div class="p-2 mb-2 bg-danger text-white text-center">TODOLIST</div>
+<p id="A_P31_B1"></p>
+<script>
+const todolist_A_P31_B1 = {pageA_P31_B1:`<ul class="list-group list-group-flush">
+<li class="list-group-item">
+1. Agent sampaikan S&K cancel order karena jika sudah beberapa kali cancel order akan di blacklist sehingga pelanggan tidak bisa melakukan proses delivery order BBM.
+  </li>
+  <li class="list-group-item">
+2. Tanyakan nomer HP yang menghubungi saat memesan.
+  </li>
+  <li class="list-group-item">
+3. Agent cek history dan lakukan konfirmasi data sesuai notes tiket sebelumnya seperti tanggal dan waktu pemesanan, alamat, konfirmasi detail pemesanan yang akan di cancel.
+  </li>
+  <li class="list-group-item">
+4. Tanyakan reason pembatalan.
+  </li>
+  <li class="list-group-item">
+5. Agent bantu eskalasi dengan mengisi mandatory lengkap
+</li>
+</ul>`};
+document.getElementById("A_P31_B1").innerHTML = todolist_A_P31_B1.pageA_P31_B1;
+</script>
+<!-- A_P31_B_konten -->               
+                </div>
+                <div class="tab-pane fade" id="nav-A_P31_C" role="tabpanel" aria-labelledby="nav-A_P31_C-tab">
+<!-- A_P31_C_konten -->    
+<div class="card ">
+<div class="card-body">
+<p class="card-text" id="A_P31_C"></p>
+<p class="text-right">1x24 Jam</p>
+</div>
+</div>
+<script>
+const mandatory_A_P31_C = {
+judul_A_P31_C : '<div class="p-2 mb-2 bg-success text-white text-center">Mandatory</div>',
+isiMandatory_A_P31_C :[
+'ID Pemesanan :',  
+'Nama Pelapor :', 
+'No yang menghubungi :',
+'Tanggal dan Waktu Memesan :', 
+'Tanggal dan Waktu Cancel Order :',
+'Alasan Cancel Order :',
+'CP :', 
+'Infokan SLA'
+]
+};
+
+function cetakMandatory_A_P31_C (isiMandatory_A_P31_C) {
+return`<ol>${isiMandatory_A_P31_C.map(mk => `<li>${mk} </li>`).join('')}</ol>`;
+}
+
+const el_A_P31_C = `<div class="mandatory"><h5 >${mandatory_A_P31_C.judul_A_P31_C}</h5>
+${cetakMandatory_A_P31_C(mandatory_A_P31_C.isiMandatory_A_P31_C)}</div>`;
+
+function tampilMandatory_A_P31_C() {
+document.getElementById("A_P31_C").innerHTML = el_A_P31_C;
+}
+tampilMandatory_A_P31_C(); 
+</script> 
+<div class="card ">
+<div class="card-body">
+<div class="p-2 mb-2 bg-info text-white text-center">TEMPLATE</div>
+<p class="card-text">Isi Tiket</p>
+<p class="card-text text-right">1x24 Jam</p>
+</div>
+</div>
+<!-- A_P31_C_konten -->
+                </div>
+              </div>
+        </div>
+        <!-- Konten A_P31_Isi -->
+<!-- Konten A_P31-->
+</div>
+  
+<div class="tab-pane fade" id="v-pills-Menu_A_P32" role="tabpanel" aria-labelledby="v-pills-Menu_A_P32-tab">
+<!-- Konten A_P32-->
+<h1 class="text-center">Delivery BBM - Namun Diluar Area</h1>
+        <!-- Konten A_P32_Menu-->
+        <div class="card">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active" id="nav-A_P32_A-tab" data-toggle="tab" href="#nav-A_P32_A" role="tab" aria-controls="nav-A_P32_A" aria-selected="true">ROOTCAUSE</a>
+                  <a class="nav-item nav-link" id="nav-A_P32_B-tab" data-toggle="tab" href="#nav-A_P32_B" role="tab" aria-controls="nav-A_P32_B" aria-selected="false">TODOLIST</a>
+                  <a class="nav-item nav-link" id="nav-A_P32_C-tab" data-toggle="tab" href="#nav-A_P32_C" role="tab" aria-controls="nav-A_P32_C" aria-selected="false">TIKET</a>
+                </div>
+              </nav>
+        </div>
+        <!-- Konten A_P32_Menu-->
+
+        <!-- Konten A_P32_Isi-->
+        <div class="card">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-A_P32_A" role="tabpanel" aria-labelledby="nav-A_P32_A-tab">
+<!-- A_P32_A_konten -->    
+<div class="p-2 mb-2 bg-danger text-white text-center">ROOTCAUSE</div>
+<p id="A_P32_A1"></p>
+<script>
+const rootcauseA_P32 = {
+cause:`<p>Delivery BBM - Namun Diluar Area</p>
+<p>Dalam percakapan ada pernyataan dari pelanggan bahwa ybs ada keinginan untuk memesan delivery BBM, namun lokasi ybs tidak dalam coverage area delivery BBM.
+</p>`,
+semuaCause : function() {return this.cause;}
+};
+document.getElementById("A_P32_A1").innerHTML = rootcauseA_P32.semuaCause();
+</script>
+<!-- CWC -->
+<div class="d-inline p-1  bg-danger text-white text-center" style="width: 100px;">CWC</div>
+<div class="container-fluid">
+<div class="row">
+<div class="list-group">
+<p class="list-group-item list-group-item-action flex-column align-items-start ">
+Demand - Layanan BBK - Delivery BBM - Namun Diluar Area
+</p>
+</div>
+</div>
+</div>
+<!-- CWC -->
+<!-- A_P32_A_konten -->
+                </div>
+                <div class="tab-pane fade" id="nav-A_P32_B" role="tabpanel" aria-labelledby="nav-A_P32_B-tab">
+<!-- A_P32_B_konten -->    
+<div class="p-2 mb-2 bg-danger text-white text-center">TODOLIST</div>
+<p id="A_P32_B1"></p>
+<script>
+const todolist_A_P32_B1 = {pageA_P32_B1:`<p>1. Edukasi sesuai S&K close di agent. Namun,</p>
+<p>2. Agent create tiket dengan CWC permintaan delivery service sebagai masukan untuk pertamina bahwa di luar area jakarta ada permintaan untuk pertamina delivery service
+</p>`};
+document.getElementById("A_P32_B1").innerHTML = todolist_A_P32_B1.pageA_P32_B1;
+</script>
+<!-- A_P32_B_konten -->               
+                </div>
+                <div class="tab-pane fade" id="nav-A_P32_C" role="tabpanel" aria-labelledby="nav-A_P32_C-tab">
+<!-- A_P32_C_konten -->    
+<div class="card ">
+<div class="card-body">
+<p class="card-text" id="A_P32_C"></p>
+<p class="text-right">1x24 Jam</p>
+</div>
+</div>
+<script> 
+const mandatory_A_P32_C = {
+judul_A_P32_C : '<div class="p-2 mb-2 bg-success text-white text-center">Mandatory</div>',
+isiMandatory_A_P32_C :[
+'Nama Pelapor :', 
+'Alamat Pelapor : ( pastikan Kecamatan, dan Kota jelas. )',
+'No yang menghubungi :',
+'Tanggal dan Waktu Memesan :', 
+'Jenis BBM :', 
+'Jumlah BBM :',
+'CP :', 
+'Infokan SLA'
+]
+};
+function cetakMandatory_A_P32_C (isiMandatory_A_P32_C) {
+return`<ol>${isiMandatory_A_P32_C.map(mk => `<li>${mk} </li>`).join('')}</ol>`;
+}
+
+const el_A_P32_C = `<div class="mandatory"><h5 >${mandatory_A_P32_C.judul_A_P32_C}</h5>
+${cetakMandatory_A_P32_C(mandatory_A_P32_C.isiMandatory_A_P32_C)}</div>`;
+
+function tampilMandatory_A_P32_C() {document.getElementById("A_P32_C").innerHTML = el_A_P32_C;}
+tampilMandatory_A_P32_C();
+</script> 
+<div class="card ">
+<div class="card-body">
+<div class="p-2 mb-2 bg-info text-white text-center">TEMPLATE</div>
+<p class="card-text"></p>Isi Tiket<p class="card-text text-right">1x24 Jam</p>
+</div>
+</div>
+<!-- A_P32_C_konten -->
+                </div>
+              </div>
+        </div>
+        <!-- Konten A_P32_Isi -->
+<!-- Konten A_P32-->
+</div>
+  
+<div class="tab-pane fade" id="v-pills-Menu_A_P33" role="tabpanel" aria-labelledby="v-pills-Menu_A_P33-tab">
+<!-- Konten A_P33-->
+<h1 class="text-center">Pengiriman Stock</h1>
+        <!-- Konten A_P33_Menu-->
+        <div class="card">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active" id="nav-A_P33_A-tab" data-toggle="tab" href="#nav-A_P33_A" role="tab" aria-controls="nav-A_P33_A" aria-selected="true">ROOTCAUSE</a>
+                  <a class="nav-item nav-link" id="nav-A_P33_B-tab" data-toggle="tab" href="#nav-A_P33_B" role="tab" aria-controls="nav-A_P33_B" aria-selected="false">TODOLIST</a>
+                  <a class="nav-item nav-link" id="nav-A_P33_C-tab" data-toggle="tab" href="#nav-A_P33_C" role="tab" aria-controls="nav-A_P33_C" aria-selected="false">TIKET</a>
+                </div>
+              </nav>
+        </div>
+        <!-- Konten A_P33_Menu-->
+
+        <!-- Konten A_P33_Isi-->
+        <div class="card">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-A_P33_A" role="tabpanel" aria-labelledby="nav-A_P33_A-tab">
+<!-- A_P33_A_konten -->    
+<div class="p-2 mb-2 bg-danger text-white text-center">ROOTCAUSE</div>
+<p id="A_P33_A1"></p>
+<script>
+const rootcauseA_P33 = {
+cause:`<p>Pengiriman Stock</p>
+<p>Pelanggan meminta untuk pengiriman stock BBM, karena produk tersebut sudah habis di SPBUnya. Ybs berkendala untuk memesan dengan cara eksisting misalnya aplikasi error atau pesan tidak terkirim, sehingga meminta bantuan CC 135 untuk pengiriman stock.
+</p>`,
+semuaCause : function() {return this.cause;}
+};
+document.getElementById("A_P33_A1").innerHTML = rootcauseA_P33.semuaCause();
+</script>
+<!-- CWC -->
+<div class="d-inline p-1  bg-danger text-white text-center" style="width: 100px;">CWC</div>
+<div class="container-fluid">
+<div class="row">
+<div class="list-group">
+<p class="list-group-item list-group-item-action flex-column align-items-start ">
+Demand - Layanan BBK - Pengiriman Stock
+</p>
+</div>
+</div>
+</div>
+<!-- CWC -->
+<!-- A_P33_A_konten -->
+                </div>
+                <div class="tab-pane fade" id="nav-A_P33_B" role="tabpanel" aria-labelledby="nav-A_P33_B-tab">
+<!-- A_P33_B_konten -->    
+<div class="p-2 mb-2 bg-danger text-white text-center">TODOLIST</div>
+<p id="A_P33_B1"></p>
+<script>
+const todolist_A_P33_B1 = {pageA_P33_B1:`<ul class="list-group list-group-flush">
+<li class="list-group-item">
+1. Tanyakan nama pelapor.
+</li>
+  <li class="list-group-item">
+2. Cantumkan tanggal dan waktu menghubungi.
+  </li>
+  <li class="list-group-item">
+3. Tanyakan Nomor SPBU, jika tidak mengetahui tanyakan lokasi seperti jalan dan patokan atau tanda khusus untuk memudahkan proses pencarian nomor SPBU oleh 2nd Tier.
+  </li>
+  <li class="list-group-item">
+4. Tanyakan tanggal dan waktu pengantaran.
+  </li>
+  <li class="list-group-item">
+5. Tanyakan jenis dan jumlah bbm yang dipesan.
+  </li>
+   <li class="list-group-item">
+6. Tanyakan nomor yang bisa dihubungi (kondisional)
+  </li>
+   <li class="list-group-item">
+7. infokan SLA
+</li>
+</ul>`};
+document.getElementById("A_P33_B1").innerHTML = todolist_A_P33_B1.pageA_P33_B1;
+</script>
+<!-- A_P33_B_konten -->               
+                </div>
+                <div class="tab-pane fade" id="nav-A_P33_C" role="tabpanel" aria-labelledby="nav-A_P33_C-tab">
+<!-- A_P33_C_konten -->    
+<div class="card ">
+<div class="card-body">
+<p class="card-text" id="A_P33_C"></p>
+<p class="text-right">1x24 Jam</p>
+</div>
+</div>
+<script> 
+const mandatory_A_P33_C = {
+judul_A_P33_C : '<div class="p-2 mb-2 bg-success text-white text-center">Mandatory</div>',
+isiMandatory_A_P33_C :[
+'Nama Pelapor : ',
+'Tanggal dan Waktu Laporan :',
+'Nomor SPBU :',
+'Alamat SPBU :',
+'Tanggal dan Waktu Pengantaran :',
+'Jenis BBM :', 
+'Jumlah BBM :',
+'CP :', 
+'infokan SLA'
+]
+};
+
+function cetakMandatory_A_P33_C (isiMandatory_A_P33_C) {
+return`<ol>${isiMandatory_A_P33_C.map(mk => `<li>${mk} </li>`).join('')}</ol>`;
+}
+
+const el_A_P33_C = `<div class="mandatory"><h5 >${mandatory_A_P33_C.judul_A_P33_C}</h5>
+${cetakMandatory_A_P33_C(mandatory_A_P33_C.isiMandatory_A_P33_C)}</div>`;
+
+function tampilMandatory_A_P33_C() {document.getElementById("A_P33_C").innerHTML = el_A_P33_C;}
+tampilMandatory_A_P33_C();
+</script> 
+<div class="card ">
+<div class="card-body">
+<div class="p-2 mb-2 bg-info text-white text-center">TEMPLATE</div>
+<p class="card-text">Isi Tiket</p>
+<p class="card-text text-right">1x24 Jam</p>
+</div>
+</div>
+<!-- A_P33_C_konten -->
+                </div>
+              </div>
+        </div>
+        <!-- Konten A_P33_Isi -->
+<!-- Konten A_P33-->
+</div>
+  
+<div class="tab-pane fade" id="v-pills-Menu_A_P34" role="tabpanel" aria-labelledby="v-pills-Menu_A_P34-tab">
+<!-- Konten A_P34-->
+<h1 class="text-center">Permohonan RFID</h1>
+        <!-- Konten A_P34_Menu-->
+        <div class="card">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active" id="nav-A_P34_A-tab" data-toggle="tab" href="#nav-A_P34_A" role="tab" aria-controls="nav-A_P34_A" aria-selected="true">ROOTCAUSE</a>
+                  <a class="nav-item nav-link" id="nav-A_P34_B-tab" data-toggle="tab" href="#nav-A_P34_B" role="tab" aria-controls="nav-A_P34_B" aria-selected="false">TODOLIST</a>
+                  <a class="nav-item nav-link" id="nav-A_P34_C-tab" data-toggle="tab" href="#nav-A_P34_C" role="tab" aria-controls="nav-A_P34_C" aria-selected="false">TIKET</a>
+                </div>
+              </nav>
+        </div>
+        <!-- Konten A_P34_Menu-->
+
+        <!-- Konten A_P34_Isi-->
+        <div class="card">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-A_P34_A" role="tabpanel" aria-labelledby="nav-A_P34_A-tab">
+<!-- A_P34_A_konten -->    
+<div class="p-2 mb-2 bg-danger text-white text-center">ROOTCAUSE</div>
+<p id="A_P34_A1"></p>
+<script>
+const rootcauseA_P34 = {
+cause:`<p>RFID</p>
+<p>Pelanggan sebagai badan usaha ingin membuat kartu RFID untuk memudahkan mobilitas perusahaannya. Pelanggan meminta agar perusahaannya menjadi meber RFID.
+</p>`,
+semuaCause : function() {return this.cause;}
+};
+document.getElementById("A_P34_A1").innerHTML = rootcauseA_P34.semuaCause();
+</script>
+<!-- CWC -->
+<div class="d-inline p-1  bg-danger text-white text-center" style="width: 100px;">CWC</div>
+<div class="container-fluid">
+<div class="row">
+<div class="list-group">
+<p class="list-group-item list-group-item-action flex-column align-items-start ">
+Demand - Layanan BBK - Permohonan RFID
+</p>
+</div>
+</div>
+</div>
+<!-- CWC -->
+<!-- A_P34_A_konten -->
+                </div>
+                <div class="tab-pane fade" id="nav-A_P34_B" role="tabpanel" aria-labelledby="nav-A_P34_B-tab">
+<!-- A_P34_B_konten -->    
+<div class="p-2 mb-2 bg-danger text-white text-center">TODOLIST</div>
+<p id="A_P34_B1"></p>
+<script>
+const todolist_A_P34_B1 = {pageA_P34_B1:`<ul class="list-group list-group-flush">
+  <li class="list-group-item">
+1. Tanyakan Nama Pelapor (PIC)
+  </li>
+  <li class="list-group-item">
+2. Tanggal dan Waktu Kejadian
+  </li>
+  <li class="list-group-item">
+3. Perusahaan 
+  </li>
+  <li class="list-group-item">
+4. Lokasi Perusahaan
+  </li>
+  <li class="list-group-item">
+5. Jenis Bidang Usaha
+  </li>
+  <li class="list-group-item">
+6. Detail keperluan 
+  </li>
+  <li class="list-group-item">
+7. Tanyakan Nomor Telp PIC dan No Perusahaan
+  </li>
+</ul>`};
+document.getElementById("A_P34_B1").innerHTML = todolist_A_P34_B1.pageA_P34_B1;
+</script>
+<!-- A_P34_B_konten -->               
+                </div>
+                <div class="tab-pane fade" id="nav-A_P34_C" role="tabpanel" aria-labelledby="nav-A_P34_C-tab">
+<!-- A_P34_C_konten -->    
+<div class="card ">
+<div class="card-body">
+<p class="card-text" id="A_P34_C"></p>
+<p class="text-right">1x24 Jam</p>
+</div>
+</div>
+<script>
+const mandatory_A_P34_C = {
+judul_A_P34_C : '<div class="p-2 mb-2 bg-success text-white text-center">Mandatory</div>',
+isiMandatory_A_P34_C :[
+'Nama Pelapor :', 
+'Nama PIC :',
+'Tanggal dan Waktu Laporan :',
+'Nama Perusahaan :',
+'Alamat Perusahaan :',
+'Jenis Bidang Usaha Perusahaan :',
+'Detail Keperluan :',
+'CP Perusahaan :', 
+'CP PIC :',
+'Infokan SLA',
+]
+};
+
+function cetakMandatory_A_P34_C (isiMandatory_A_P34_C) {
+return`<ol>${isiMandatory_A_P34_C.map(mk => `<li>${mk} </li>`).join('')}</ol>`;
+}
+
+const el_A_P34_C = `<div class="mandatory"><h5 >${mandatory_A_P34_C.judul_A_P34_C}</h5>
+${cetakMandatory_A_P34_C(mandatory_A_P34_C.isiMandatory_A_P34_C)}</div>`;
+
+function tampilMandatory_A_P34_C() {document.getElementById("A_P34_C").innerHTML = el_A_P34_C;}
+tampilMandatory_A_P34_C();
+</script> 
+<div class="card ">
+<div class="card-body">
+<div class="p-2 mb-2 bg-info text-white text-center">TEMPLATE</div>
+<p class="card-text">Isi Tiket</p><p class="card-text text-right">1x24 Jam</p>
+</div>
+</div>
+<!-- A_P34_C_konten -->
+                </div>
+              </div>
+        </div>
+        <!-- Konten A_P34_Isi -->
+<!-- Konten A_P34-->
+</div>
+  
+<div class="tab-pane fade" id="v-pills-Menu_A_P35" role="tabpanel" aria-labelledby="v-pills-Menu_A_P35-tab">
+<!-- Konten A_P35-->
+<h1 class="text-center">BBM Kaleng</h1>
+        <!-- Konten A_P35_Menu-->
+        <div class="card">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active" id="nav-A_P35_A-tab" data-toggle="tab" href="#nav-A_P35_A" role="tab" aria-controls="nav-A_P35_A" aria-selected="true">ROOTCAUSE</a>
+                  <a class="nav-item nav-link" id="nav-A_P35_B-tab" data-toggle="tab" href="#nav-A_P35_B" role="tab" aria-controls="nav-A_P35_B" aria-selected="false">TODOLIST</a>
+                  <a class="nav-item nav-link" id="nav-A_P35_C-tab" data-toggle="tab" href="#nav-A_P35_C" role="tab" aria-controls="nav-A_P35_C" aria-selected="false">TIKET</a>
+                </div>
+              </nav>
+        </div>
+        <!-- Konten A_P35_Menu-->
+
+        <!-- Konten A_P35_Isi-->
+        <div class="card">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-A_P35_A" role="tabpanel" aria-labelledby="nav-A_P35_A-tab">
+<!-- A_P35_A_konten -->    
+<div class="p-2 mb-2 bg-danger text-white text-center">ROOTCAUSE</div>
+<p id="A_P35_A1"></p>
+<script>
+const rootcauseA_P35 = {
+cause:`<p>BBM Kaleng</p>
+<p>Informasi harga BBM kaleng, jenis yang disediakan, ukuran BBM kaleng dari masing-masing jenis produk, informasi yang berkaitan dengan BBM kaleng, atau informasi SPBU yang menjual BBM Kaleng > agent bantu create tiket.
+</p>
+<p>
+**Kecuali informasi lokasi SPBU BBM kemasan untuk produk yang terdapat dalam source "SPBU Jalur Toll Trans Jawa penyedia kemasan" > agent mengacu pada pansol "List SPBU BBM Kaleng").
+</p>`,
+semuaCause : function() {return this.cause;}
+};
+document.getElementById("A_P35_A1").innerHTML = rootcauseA_P35.semuaCause();
+</script>
+<!-- CWC -->
+<div class="d-inline p-1  bg-danger text-white text-center" style="width: 100px;">CWC</div>
+<div class="container-fluid">
+<div class="row">
+<div class="list-group">
+<p class="list-group-item list-group-item-action flex-column align-items-start ">
+Information - Layanan BBK - BBM Kaleng
+</p>
+</div>
+</div>
+</div>
+<!-- CWC -->
+<!-- A_P35_A_konten -->
+                </div>
+                <div class="tab-pane fade" id="nav-A_P35_B" role="tabpanel" aria-labelledby="nav-A_P35_B-tab">
+<!-- A_P35_B_konten -->    
+<div class="p-2 mb-2 bg-danger text-white text-center">TODOLIST</div>
+<p id="A_P35_B1"></p>
+<script>
+const todolist_A_P35_B1 = {pageA_P35_B1:`<ul class="list-group list-group-flush">
+<li class="list-group-item">
+1. Tanyakan Nama, Lokasi pelapor dan produk apa yg dicari
+</li>
+<li class="list-group-item">
+2. Jika produk dan lokasi tercover dalam source "SPBU Jalur Toll Trans Jawa penyedia kemasan", silakan mengacu pada pansol "List SPBU BBM Kaleng".
+</li>
+<li class="list-group-item">
+3. Tetapi jika produk dan lokasi yang ditanyakan tidak ada dalam source "SPBU Jalur Toll Trans Jawa penyedia kemasan" > Arahkan ke Pertamina Delivery 135 (pastikan syarat dan ketentuan PDS BBM sudah terpenuhi oleh pelanggan), apabila pelanggan tidak berkenan delivery, agent bantu eskalasi untuk mendapatkan informasi yang dibutuhkan pelanggan.
+</li>
+<li class="list-group-item">
+4. Infokan SLA
+</li>
+</ul>`};
+document.getElementById("A_P35_B1").innerHTML = todolist_A_P35_B1.pageA_P35_B1;
+</script>
+<!-- A_P35_B_konten -->               
+                </div>
+                <div class="tab-pane fade" id="nav-A_P35_C" role="tabpanel" aria-labelledby="nav-A_P35_C-tab">
+<!-- A_P35_C_konten -->    
+<div class="card ">
+<div class="card-body">
+<p class="card-text" id="A_P35_C"></p>
+<p class="text-right">1x24 Jam</p>
+</div>
+</div>
+<script>
+const mandatory_A_P35_C = {
+judul_A_P35_C : '<div class="p-2 mb-2 bg-success text-white text-center">Mandatory</div>',
+isiMandatory_A_P35_C :[
+'Nama Pelapor : ',
+'Lokasi Pelapor :', 
+'Jenis Produk :',
+'Jumlah Keperluan :',
+'Detail Keperluan :',
+'CP :',
+'Infokan SLA',
+]
+};
+
+function cetakMandatory_A_P35_C (isiMandatory_A_P35_C) {
+return`<ol>${isiMandatory_A_P35_C.map(mk => `<li>${mk} </li>`).join('')}</ol>`;
+}
+
+const el_A_P35_C = `<div class="mandatory"><h5 >${mandatory_A_P35_C.judul_A_P35_C}</h5>
+${cetakMandatory_A_P35_C(mandatory_A_P35_C.isiMandatory_A_P35_C)}</div>`;
+
+function tampilMandatory_A_P35_C() {document.getElementById("A_P35_C").innerHTML = el_A_P35_C;}
+tampilMandatory_A_P35_C();
+</script> 
+<div class="card ">
+<div class="card-body">
+<div class="p-2 mb-2 bg-info text-white text-center">TEMPLATE</div>
+<p class="card-text">
+Pelanggan Atas Nama ... yang berada di Lokasi .... , Menanyakan List SPBU BBM Kaleng ( Untuk Pelanggan yang belum ada area nya, dibantu dilaporkan sebatas Saran dan Masukan) Tanyakan Nama ..., Lokasi / Alamat ..., Nomor yang bisa dihubungi...
+</p>
+<p class="card-text text-right">1x24 Jam</p>
+</div>
+</div>
+<!-- A_P35_C_konten -->
+                </div>
+              </div>
+        </div>
+        <!-- Konten A_P35_Isi -->
+<!-- Konten A_P35-->
+</div>
+
 
 <!-- Konten A -->
 
