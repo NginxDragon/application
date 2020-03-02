@@ -1,0 +1,15 @@
+body{
+    font-family: Calibri;
+}
+.tab-pane h1{
+    font-size: 30px;
+    background-color: azure;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+}
+.tab-pane p{
+    margin-bottom: 10px;
+    padding: 5px;
+    line-height: 1.3;
+}
