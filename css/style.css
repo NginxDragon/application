@@ -98,3 +98,10 @@ text-shadow: 0 2px 1px black;
     text-decoration: none;
     text-align: left;
 }
+
+#nav-B_P16_B .card{
+    float: left;
+    width: 510px;
+    height: 490px;
+    
+}
