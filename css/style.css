@@ -50,10 +50,10 @@ text-shadow: 0 2px 1px black;
 
 
  #v-pills-tab{
-            display: block;
-            height: 480px;
-            overflow: auto;
-            }
+display: block;
+height: 480px;
+overflow: auto;
+}
 .tab-pane h1{
     font-size: 30px;
     background-color: azure;
@@ -65,6 +65,20 @@ text-shadow: 0 2px 1px black;
     margin-bottom: 10px;
     padding: 5px;
     line-height: 1.3;
+}
+
+.tab-pane div .p-2{
+    background-color:#006CB8;
+    width: 200px;
+    margin: auto;
+    
+}
+
+.tab-pane div .card .card-header
+{
+    width: 310px;
+    background-color: #27A844;
+    color: white;
 }
 
 .card .nav a {
@@ -104,4 +118,10 @@ text-shadow: 0 2px 1px black;
     width: 510px;
     height: 490px;
     
+}
+
+
+
+#rootcause div{
+    background-color: #006CB8;
 }
