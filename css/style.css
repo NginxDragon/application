@@ -87,10 +87,20 @@ overflow: auto;
     margin-bottom: 4px;
     padding-top: 4px; 
     padding-bottom: 4px;   
-    padding-left: 2px; 
-    
+    padding-left: 2px;      
+}
+.tab-content .card .nav a{
+    display: block;
+    height: 40px;
+    width: 100px;
+    background-color:lightblue;
+    margin: 1px;
+    line-height: 40px;
+    text-align: center;
+   
     
 }
+
 
 .card .nav a:hover {
     background-color: aquamarine;
@@ -109,6 +119,8 @@ overflow: auto;
 .card .nav a:link {
     text-decoration: none;
   }
+
+
 
 .input-group textarea:hover{
     background-color:azure;
@@ -133,4 +145,47 @@ overflow: auto;
 
 #rootcause div{
     background-color: #006CB8;
+}
+
+#C_P1_C1{
+    width: 475px;
+    height: 360px;
+    float: left;
+    margin: 5px;
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+#C_P1_C2{
+   
+    width: 475px;
+    height: 360px;
+    float: left;
+    margin: 5px;
+    border-style: dotted;
+    border-color: blue;
+    border-width: 1px;
+    padding-left: 10px;
+    
+}
+#C_P1_C2 span{
+    display: block;
+    width: 440px;
+    height: 40px;
+    margin: 4px auto;
+    color: black;
+    padding: 10px;
+}
+#C_P3_B1 .indent {
+text-indent: 10px;
+
+}
+#C_P3_B1 .indent.indent2{
+    text-indent: 25px;
+}
+#C_P4_B1 .indent{
+    text-indent: 10px;
 }
