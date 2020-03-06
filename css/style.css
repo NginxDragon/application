@@ -84,18 +84,27 @@ overflow: auto;
 .card .nav a {
     color: black;
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
+    padding-top: 4px; 
+    padding-bottom: 4px;   
+    padding-left: 2px; 
+    
+    
 }
 
 .card .nav a:hover {
     background-color: aquamarine;
-    
+    padding-top: 4px; 
+    padding-bottom: 4px;   
+    padding-left: 2px; 
 }
 
 .card .nav a:focus {
     color: black;
     background-color:greenyellow;
-    
+    padding-top: 4px; 
+    padding-bottom: 4px;   
+    padding-left: 2px;  
 }
 .card .nav a:link {
     text-decoration: none;
