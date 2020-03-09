@@ -7,8 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">  
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Panduan Solusi Pertamina 135</title>
   </head>
   <body>
@@ -7056,6 +7056,7 @@ tampilMandatory_A_P55_C();
                   <a class="nav-item " id="nav-A_P56_A-tab" data-toggle="tab" href="#nav-A_P56_A" role="tab" aria-controls="nav-A_P56_A" aria-selected="true">ROOTCAUSE</a>
                   <a class="nav-item " id="nav-A_P56_B-tab" data-toggle="tab" href="#nav-A_P56_B" role="tab" aria-controls="nav-A_P56_B" aria-selected="false">TODOLIST</a>
                   <a class="nav-item " id="nav-A_P56_C-tab" data-toggle="tab" href="#nav-A_P56_C" role="tab" aria-controls="nav-A_P56_C" aria-selected="false">TIKET</a>
+                  <label >Update : 09/03/2020 22:18</label>
                 </div>
               </nav>
         </div>
@@ -7096,44 +7097,89 @@ Information - Layanan BBK - Pertashop
 <div class="p-2 mb-2 bg-danger text-white text-center">TODOLIST</div>
 <p id="A_P56_B1"></p>
 <script>
-const todolist_A_P56_B1 = {pageA_P56_B1:`<h4 class="text-center">Informasi Syarat dan Ketentuan Pendirian Pertashop</h4>
+const todolist_A_P56_B1 = {pageA_P56_B1:`
 <div class="card">
-  <h6 >1. Ketentuan Lahan Untuk Jenis Pertashop :</h6>
+<h5 >Untuk Pertashop Persyaratannya yang bisa disamapikan sebagai berikut :</h5>
   <div class="card-body">
-    <h7 class="card-title">A. Pertashop Gold</h7>
-    <p class="card-text">Minimal lahan 144 m2 dan Desa dengan jarak +10 km dari SPBU</p>
-    <h7 class="card-title">B. Pertashop Platinum</h7>
-    <p class="card-text">Minimal Lahan 200 m2 dan dengan Kecamatan yang belum ada SPBU</p>
-    <h7 class="card-title">C. Pertashop Diamond </h7>
-    <p class="card-text">Minimal Lahan 500 m2 dan dengan Kecamatan yang belum ada SPBU</p>
+    <h5 class="card-title">Special title treatment</h5>
+    <p class="card-text">1. Diprioritaskan kecamatan yg belum ada spbu
+    </p>
+    <p class="card-text">2. Desa yg jarak 20 km dari spbu terdekat ( prioritas desa atas rekomendasi kemendagri ) 
+    </p>
+    <p class="card-text">3. Product yg dijual adalah Pertamax
+    </p>
+    <p class="card-text">4. Akses ke desa tsb bisa dilewati mobil tangki .
+    </p>
+    <p class="card-text">5. Lalu lintas kendaraan atau traffic di depan lokasi cukup ramai
+    </p>
+    <p class="card-text">6. Harus berbentuk badan usaha / koperasi bukan perseorangan
+    </p>
   </div>
-</div>
-<div class="card">
-  <h6 >
-  2. Berada di jalan yang dapat dilalui mobil tangki Pertamina
-  </h6>
-  <h6 >
-  3. Lalu lintas kendaraan atau traffic di depan lokasi cukup ramai
-  </h6>
-  <h6 >
-  4. Diprioritaskan kecamatan yang belum mempunyai SPBU dan diutamakan rural area (Kawasan Perdesaan)
-  </h6>
 </div>
 
 <div class="card">
+<h5 class="card-header">Jenis kemitraan :</h5>
   <div class="card-body">
-    <h5 class="card-title">Mekanisme Pengajuan :</h5>
-    <p class="card-text">
-    Jika memenuhi Persyaratan tersebut Pemohon dapat langsung diarahkan ke region (MOR) terdekat, acuan web <a href="https://www.pertamina.com/id/alamat-pusat-informasi-publik-pertamina">https://www.pertamina.com/id/alamat-pusat-informasi-publik-pertamina</a> dengan menyertakan juga data koordinat dan lokasi (alamat detail) pelanggan
+    <h5 class="card-title">GOLD</h5>
+    <p class="card-text">Sesuai untuk desa atau kecamatan yang berjarak >5KM dari SPBU atau sesuai hasil evaluasi.
     </p>
-    <p class="card-text">
-    Berikan pengertian dengan menghubungi langsung ke region (MOR), pelanggan akan mendapatkan informasi yg jelas dan detail terkait persyaratan dan proses pengajuan
+    <p class="card-text">Kebutuhan lahan : 144 m2
     </p>
-    <p class="card-text">
-    Usahakan bisa FCR ya, kecuali jika pelanggan menyampaikan tidak bisa datang dan menginginkan pengajuan melalui email, silakan create tiket dg mandatory
+    <p class="card-text">Rekomendasi omset 400 Liter/Hari
+    </p>
+    <p class="card-text">Tanki penyimpanan 3 Kiloliter (Portabel)
+    </p>
+    <p class="card-text">Produk : Pertamax, elpiji 12Kg, Brigh Gas dan Pelumas
+    </p>
+
+    <h5 class="card-title">PLATINUM</h5>
+    <p class="card-text">Sesuai untuk kecamatan yang belum terdapat SPBU atau sesuai hasil survey
+    </p>
+    <p class="card-text">Kebutuhan lahan : 200 m2 lebar muka min. 20 m
+    </p>
+    <p class="card-text">Rekomendasi omset 1.000 Liter/Hari
+    </p>
+    <p class="card-text">Tanki penyimpanan 10 Kiloliter (Pendam)
+    </p>
+    <p class="card-text">Produk : Pertamax, elpiji 12Kg, Brigh Gas dan Pelumas, produk UMKM, Outlet pulsa
+    </p>
+
+    <h5 class="card-title">DIAMOND</h5>
+    <p class="card-text">Sesuai untuk kecamatan yang belum terdapat SPBU atau sesuai hasil survey
+    </p>
+    <p class="card-text">Kebutuhan lahan : 500 m2 lebar muka min. 20 m
+    </p>
+    <p class="card-text">Rekomendasi omset 1.000 Liter/Hari
+    </p>
+    <p class="card-text">Tanki penyimpanan 10 Kiloliter (Pendam)
+    </p>
+    <p class="card-text">Produk : Pertamax, elpiji 12Kg, Brigh Gas dan Pelumas, produk UMKM, Outlet pulsa, consumer goods dan warkop
     </p>
   </div>
-</div>`};
+</div>
+<p>Untuk informasi lebih detail sarankan pelanggan akses ke <a href="https://pertamina.com/" target="_blank">www.pertamina.com</a>.</p>
+
+<div class="card">
+  <h5 >Bagaimana jika ada pelanggan yang berminat?</h5>
+  <div class="card-body">
+    <h5 class="card-title">Tahapan proses :</h5>
+    <p class="card-text">1. Pengajuan  : Alamat Lokasi, Data koordinat, Dokument badan usaha atau badan hukum. Jika sdh tersedia silakan agent bandu daftarkan ke link :
+    </p>
+    <p class="card-text"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfHrzu0Wsu5OJiKJkgLFaySrpe8r1u_xNkjBBF7RE0mKZa7nw/viewform" target="_blank">https://docs.google.com/forms/d/e/1FAIpQLSfHrzu0Wsu5OJiKJkgLFaySrpe8r1u_xNkjBBF7RE0mKZa7nw/viewform</a>
+    </p>
+    <p class="card-text">2. Verifikasi : Survey lapangan dan studi kelayakan
+    </p>
+    <p class="card-text">3. Administrasi : Pengajuan ke Pemda, Akuisisi lahan
+    </p>
+    <p class="card-text">4. Rancang bangun : Desain disetujui Pertamina, jika sudah makan pembangunan dimulai
+    </p>
+    <p class="card-text">5. Finalisasi : Perjanjian Kerjasama
+    </p>'
+    <p class="card-text">6. Operasi
+    </p>
+  </div>
+</div>
+`};
 document.getElementById("A_P56_B1").innerHTML = todolist_A_P56_B1.pageA_P56_B1;
 </script>
 <!-- A_P56_B_konten -->               
