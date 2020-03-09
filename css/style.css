@@ -189,3 +189,28 @@ text-indent: 10px;
 #C_P4_B1 .indent{
     text-indent: 10px;
 }
+p#C_P12_B1 ul li:nth-child(5){
+    text-indent: 10px; 
+}
+p#C_P12_B1 ul li:nth-child(6){
+    text-indent: 10px; 
+}
+
+div#v-pills-Menu_C_P13 .card .nav label{
+    background-color: blanchedalmond;
+    line-height: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: none;
+}
+
+p#C_P14_B1 ul li:nth-child(5){
+    text-indent: 10px; 
+}
+
+p#C_P14_B1 ul li:nth-child(6){
+    text-indent: 10px; 
+}
+p#C_P14_B1 ul li:nth-child(7){
+    text-indent: 10px; 
+}
