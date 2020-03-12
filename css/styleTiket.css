@@ -1,0 +1,91 @@
+/* tiket */
+#C_P1_C1, 
+#C_P2_C1, 
+#C_P3_C1,
+#C_P4_C1,
+#C_P5_C1,
+#C_P8_C1,
+#C_P15_C1,
+#C_P16_C1
+{
+    width: 475px;
+    height: 410px;
+    float: left;
+    margin: 5px;
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+#C_P1_C2, 
+#C_P2_C2, 
+#C_P3_C2,
+#C_P4_C2,
+#C_P5_C2,
+#C_P8_C2,
+#C_P15_C2,
+#C_P16_C2
+{
+    width: 475px;
+    height: 410px;
+    float: left;
+    margin: 5px;
+    border-style: dotted;
+    border-color: blue;
+    border-width: 1px;
+    padding-left: 10px;
+    
+}
+
+
+#C_P6_C1,
+#C_P6_C2,
+#C_P6_C4,
+#C_P6_C5
+{
+    width: 475px;
+    height: 480px;
+    float: left;
+    margin: 5px;
+    border-style: solid;
+    border-color: green;
+    border-width: 1px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+#C_P6_C3,
+#C_P6_C6
+{
+    width: 965px;
+    height: 280px;
+    float: left;
+    margin: 5px;
+    border-style: solid;
+    border-color: green;
+    border-width: 1px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+#C_P1_C2 span, 
+#C_P2_C2 span, 
+#C_P3_C2 span,
+#C_P4_C2 span,
+#C_P5_C2 span,
+#C_P6_C2 span,
+#C_P6_C5 span,
+#C_P8_C2 span,
+#C_P15_C2 span,
+#C_P16_C2 span
+{
+    display: block;
+    width: 440px;
+    height: 40px;
+    margin: 4px auto;
+    color: black;
+    padding: 10px;
+}
+
