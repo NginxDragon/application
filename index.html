@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">  
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleUpdate.css">
+    <link rel="stylesheet" href="css/styleTiket.css">
     <title>Panduan Solusi Pertamina 135</title>
   </head>
   <body>
@@ -16168,9 +16170,10 @@ tampilMandatory_B_P71_C();
         <div class="card">
             <nav>
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                  <a class="nav-item nav-link active" id="nav-C_P1_A-tab" data-toggle="tab" href="#nav-C_P1_A" role="tab" aria-controls="nav-C_P1_A" aria-selected="true">ROOTCAUSE</a>
-                  <a class="nav-item nav-link" id="nav-C_P1_B-tab" data-toggle="tab" href="#nav-C_P1_B" role="tab" aria-controls="nav-C_P1_B" aria-selected="false">TODOLIST</a>
-                  <a class="nav-item nav-link" id="nav-C_P1_C-tab" data-toggle="tab" href="#nav-C_P1_C" role="tab" aria-controls="nav-C_P1_C" aria-selected="false">TIKET</a>
+                  <a class="nav-item " id="nav-C_P1_A-tab" data-toggle="tab" href="#nav-C_P1_A" role="tab" aria-controls="nav-C_P1_A" aria-selected="true">ROOTCAUSE</a>
+                  <a class="nav-item " id="nav-C_P1_B-tab" data-toggle="tab" href="#nav-C_P1_B" role="tab" aria-controls="nav-C_P1_B" aria-selected="false">TODOLIST</a>
+                  <a class="nav-item " id="nav-C_P1_C-tab" data-toggle="tab" href="#nav-C_P1_C" role="tab" aria-controls="nav-C_P1_C" aria-selected="false">TIKET</a>
+                  <label >Update : 12/03/2020 18:01</label>
                 </div>
               </nav>
         </div>
@@ -16287,7 +16290,6 @@ isiMandatory_C_P1_C2 :[
 'CP :',
 'Infokan screenshot kendala :',
 'Nama akun pelanggan :',
-'Subject Email yang dikirimkan :',
 'Infokan SLA',
 '<p class="card-text text-right">3x24 Jam</p>'
 ]
@@ -16325,9 +16327,10 @@ tampilMandatory_C_P1_C2();
         <div class="card">
             <nav>
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                  <a class="nav-item nav-link active" id="nav-C_P2_A-tab" data-toggle="tab" href="#nav-C_P2_A" role="tab" aria-controls="nav-C_P2_A" aria-selected="true">ROOTCAUSE</a>
-                  <a class="nav-item nav-link" id="nav-C_P2_B-tab" data-toggle="tab" href="#nav-C_P2_B" role="tab" aria-controls="nav-C_P2_B" aria-selected="false">TODOLIST</a>
-                  <a class="nav-item nav-link" id="nav-C_P2_C-tab" data-toggle="tab" href="#nav-C_P2_C" role="tab" aria-controls="nav-C_P2_C" aria-selected="false">TIKET</a>
+                  <a class="nav-item " id="nav-C_P2_A-tab" data-toggle="tab" href="#nav-C_P2_A" role="tab" aria-controls="nav-C_P2_A" aria-selected="true">ROOTCAUSE</a>
+                  <a class="nav-item " id="nav-C_P2_B-tab" data-toggle="tab" href="#nav-C_P2_B" role="tab" aria-controls="nav-C_P2_B" aria-selected="false">TODOLIST</a>
+                  <a class="nav-item " id="nav-C_P2_C-tab" data-toggle="tab" href="#nav-C_P2_C" role="tab" aria-controls="nav-C_P2_C" aria-selected="false">TIKET</a>
+                  <label >Update : 12/03/2020 18:01</label>
                 </div>
               </nav>
         </div>
@@ -16391,16 +16394,18 @@ document.getElementById("C_P2_B1").innerHTML = todolist_C_P2_B1.pageC_P2_B1;
 <!-- C_P2_C_konten -->    
 <div class="card ">
 <div class="card-body">
-<p class="card-text" id="C_P2_C"></p><p class="card-text text-right">3x24 Jam</p>
+<p class="card-text" id="C_P2_C1"></p>
+<p class="card-text" id="C_P2_C2"></p>
+<p class="card-text text-right">3x24 Jam</p>
 </div>
 </div>
 <div class="input-group">
 <textarea class="form-control" aria-label="With textarea" ></textarea><div class="input-group-prepend"><span class="input-group-text" >Note</span></div> 
 </div>
 <script> 
-const mandatory_C_P2_C = {
-judul_C_P2_C : '<div class="p-2 mb-2 text-white text-center">Mandatory</div>',
-isiMandatory_C_P2_C :[
+const mandatory_C_P2_C1 = {
+judul_C_P2_C1 : '<div class="p-2 mb-2 text-white text-center">Mandatory</div>',
+isiMandatory_C_P2_C1 :[
 'Nama Pelapor :',
 'Tanggal dan Waktu Penukaran :',
 'Nomor Terdaftar MyPertamina dan LinkAja :',
@@ -16420,15 +16425,46 @@ isiMandatory_C_P2_C :[
 ]
 };
 
-function cetakMandatory_C_P2_C (isiMandatory_C_P2_C) {
-return`<ol>${isiMandatory_C_P2_C.map(mk => `<li>${mk} </li>`).join('')}</ol>`;
+function cetakMandatory_C_P2_C1 (isiMandatory_C_P2_C1) {
+return`<ol>${isiMandatory_C_P2_C1.map(mk => `<li>${mk} </li>`).join('')}</ol>`;
 }
 
-const el_C_P2_C = `<div class="mandatory"><h5 >${mandatory_C_P2_C.judul_C_P2_C}</h5>
-${cetakMandatory_C_P2_C(mandatory_C_P2_C.isiMandatory_C_P2_C)}</div>`;
+const el_C_P2_C1 = `<div class="mandatory"><h5 >${mandatory_C_P2_C1.judul_C_P2_C1}</h5>
+${cetakMandatory_C_P2_C1(mandatory_C_P2_C1.isiMandatory_C_P2_C1)}</div>`;
 
-function tampilMandatory_C_P2_C() {document.getElementById("C_P2_C").innerHTML = el_C_P2_C;}
-tampilMandatory_C_P2_C();
+function tampilMandatory_C_P2_C1() {document.getElementById("C_P2_C1").innerHTML = el_C_P2_C1;}
+tampilMandatory_C_P2_C1();
+
+const mandatory_C_P2_C2 = {
+judul_C_P2_C2 : '<span class="alert-primary">Note : Untuk Layanan Sosmed (Facebook, Twitter , Instagram)</span>',
+isiMandatory_C_P2_C2 :[
+'Nama Pelapor :',
+'Tanggal dan Waktu Penukaran :',
+'Nomor Terdaftar MyPertamina dan LinkAja :',
+'No KTP :',
+'Jenis Merchandise :',
+'Jumlah Poin Sebelum Terpotong :',
+'Jumlah Poin Setelah Terpotong :',
+'Notifikasi Berhasil : (Berhasil/Tidak Berhasil)',
+'Alamat Pengiriman :',
+'Detail Permasalahan :',
+'Email :',
+'CP :',
+'Infokan screenshot penukaran :',
+'Infokan SLA'
+]
+};
+
+function cetakMandatory_C_P2_C2 (isiMandatory_C_P2_C2) {
+return`<ol>${isiMandatory_C_P2_C2.map(mk => `<li>${mk} </li>`).join('')}</ol>`;
+}
+
+const el_C_P2_C2 = `<div class="mandatory"><h5 >${mandatory_C_P2_C2.judul_C_P2_C2}</h5>
+${cetakMandatory_C_P2_C2(mandatory_C_P2_C2.isiMandatory_C_P2_C2)}</div>`;
+
+function tampilMandatory_C_P2_C2() {document.getElementById("C_P2_C2").innerHTML = el_C_P2_C2;}
+tampilMandatory_C_P2_C2();
+
 </script> 
 <div class="card ">
 <div class="card-body">
@@ -16443,6 +16479,7 @@ tampilMandatory_C_P2_C();
         <!-- Konten C_P2_Isi -->
 <!-- Konten C_P2-->
 </div>
+
 <div class="tab-pane fade" id="v-pills-Menu_C_P3" role="tabpanel" aria-labelledby="v-pills-Menu_C_P3-tab">
 <!-- Konten C_P3-->
 <h1 class="text-center">MyPertamina Tidak Mendapatkan Poin</h1>
@@ -16453,6 +16490,7 @@ tampilMandatory_C_P2_C();
                   <a class="nav-item " id="nav-C_P3_A-tab" data-toggle="tab" href="#nav-C_P3_A" role="tab" aria-controls="nav-C_P3_A" aria-selected="true">ROOTCAUSE</a>
                   <a class="nav-item " id="nav-C_P3_B-tab" data-toggle="tab" href="#nav-C_P3_B" role="tab" aria-controls="nav-C_P3_B" aria-selected="false">TODOLIST</a>
                   <a class="nav-item " id="nav-C_P3_C-tab" data-toggle="tab" href="#nav-C_P3_C" role="tab" aria-controls="nav-C_P3_C" aria-selected="false">TIKET</a>
+                  <label >Update : 12/03/2020 18:01</label> 
                 </div>
               </nav>
         </div>
@@ -16535,16 +16573,18 @@ document.getElementById("C_P3_B1").innerHTML = todolist_C_P3_B1.pageC_P3_B1;
 <!-- C_P3_C_konten -->    
 <div class="card ">
 <div class="card-body">
-<p class="card-text" id="C_P3_C"></p><p class="card-text text-right">3x24 Jam</p>
+<p class="card-text" id="C_P3_C1"></p>
+<p class="card-text" id="C_P3_C2"></p>
+<p class="card-text text-right">3x24 Jam</p>
 </div>
 </div>
 <div class="input-group">
 <textarea class="form-control" aria-label="With textarea" ></textarea><div class="input-group-prepend"><span class="input-group-text" >Note</span></div> 
 </div>
 <script>
-const mandatory_C_P3_C = {
-judul_C_P3_C : '<div class="p-2 mb-2 text-white text-center">Mandatory</div>',
-isiMandatory_C_P3_C :[
+const mandatory_C_P3_C1 = {
+judul_C_P3_C1 : '<div class="p-2 mb-2 text-white text-center">Mandatory</div>',
+isiMandatory_C_P3_C1 :[
 'Nama Pelapor :',
 'Tanggal dan Waktu Kejadian :',
 'Nomor Terdaftar MyPertamina dan LinkAja :',
@@ -16563,15 +16603,45 @@ isiMandatory_C_P3_C :[
 ]
 };
 
-function cetakMandatory_C_P3_C (isiMandatory_C_P3_C) {
-return`<ol>${isiMandatory_C_P3_C.map(mk => `<li>${mk} </li>`).join('')}</ol>`;
+function cetakMandatory_C_P3_C1 (isiMandatory_C_P3_C1) {
+return`<ol>${isiMandatory_C_P3_C1.map(mk => `<li>${mk} </li>`).join('')}</ol>`;
 }
 
-const el_C_P3_C = `<div class="mandatory"><h5 >${mandatory_C_P3_C.judul_C_P3_C}</h5>
-${cetakMandatory_C_P3_C(mandatory_C_P3_C.isiMandatory_C_P3_C)}</div>`;
+const el_C_P3_C1 = `<div class="mandatory"><h5 >${mandatory_C_P3_C1.judul_C_P3_C1}</h5>
+${cetakMandatory_C_P3_C1(mandatory_C_P3_C1.isiMandatory_C_P3_C1)}</div>`;
 
-function tampilMandatory_C_P3_C() {document.getElementById("C_P3_C").innerHTML = el_C_P3_C;}
-tampilMandatory_C_P3_C(); 
+function tampilMandatory_C_P3_C1() {document.getElementById("C_P3_C1").innerHTML = el_C_P3_C1;}
+tampilMandatory_C_P3_C1(); 
+
+const mandatory_C_P3_C2 = {
+judul_C_P3_C2 : '<span class="alert-primary">Note : Untuk Layanan Sosmed (Facebook, Twitter , Instagram)</span>',
+isiMandatory_C_P3_C2 :[
+'Nama Pelapor :',
+'Tanggal dan Waktu Kejadian :',
+'Nomor Terdaftar MyPertamina dan LinkAja :',
+'No KTP :',
+'Jenis BBM :',
+'Jumlah Poin Sebelumnya :',
+'Nomor SPBU :',
+'Alamat SPBU :',
+'Detail Permasalahan :',
+'Email :',
+'CP :',
+'Infokan Struk Transaksi, dan History Transaksi pada Aplikasi MyPertamina :',
+'Infokan SLA'
+]
+};
+
+function cetakMandatory_C_P3_C2 (isiMandatory_C_P3_C2) {
+return`<ol>${isiMandatory_C_P3_C2.map(mk => `<li>${mk} </li>`).join('')}</ol>`;
+}
+
+const el_C_P3_C2 = `<div class="mandatory"><h5 >${mandatory_C_P3_C2.judul_C_P3_C2}</h5>
+${cetakMandatory_C_P3_C2(mandatory_C_P3_C2.isiMandatory_C_P3_C2)}</div>`;
+
+function tampilMandatory_C_P3_C2() {document.getElementById("C_P3_C2").innerHTML = el_C_P3_C2;}
+tampilMandatory_C_P3_C2(); 
+
 </script> 
 <div class="card ">
 <div class="card-body">
@@ -16599,6 +16669,7 @@ Ybs Atas Nama …Waktu kejadian Di tanggal ..Jam.. mengeluhkan tidak mendapatkan
                   <a class="nav-item " id="nav-C_P4_A-tab" data-toggle="tab" href="#nav-C_P4_A" role="tab" aria-controls="nav-C_P4_A" aria-selected="true">ROOTCAUSE</a>
                   <a class="nav-item " id="nav-C_P4_B-tab" data-toggle="tab" href="#nav-C_P4_B" role="tab" aria-controls="nav-C_P4_B" aria-selected="false">TODOLIST</a>
                   <a class="nav-item " id="nav-C_P4_C-tab" data-toggle="tab" href="#nav-C_P4_C" role="tab" aria-controls="nav-C_P4_C" aria-selected="false">TIKET</a>
+                  <label >Update : 12/03/2020 18:28 </label> 
                 </div>
               </nav>
         </div>
@@ -16626,7 +16697,7 @@ document.getElementById("C_P4_A1").innerHTML = rootcauseC_P4.semuaCause();
 <div class="row">
 <div class="list-group">
 <p class="list-group-item list-group-item-action flex-column align-items-start ">
-
+Complaint - MyPertamina - Top Up berhasil, saldo tidak bertambah
 </p>
 </div>
 </div>
@@ -16680,16 +16751,18 @@ document.getElementById("C_P4_B1").innerHTML = todolist_C_P4_B1.pageC_P4_B1;
 <!-- C_P4_C_konten -->    
 <div class="card ">
 <div class="card-body">
-<p class="card-text" id="C_P4_C"></p><p class="card-text text-right">3x24 Jam</p>
+<p class="card-text" id="C_P4_C1"></p>
+<p class="card-text" id="C_P4_C2"></p>
+<p class="card-text text-right">3x24 Jam</p>
 </div>
 </div>
 <div class="input-group">
 <textarea class="form-control" aria-label="With textarea" ></textarea><div class="input-group-prepend"><span class="input-group-text" >Note</span></div> 
 </div>
 <script> 
-const mandatory_C_P4_C = {
-judul_C_P4_C : '<div class="p-2 mb-2 text-white text-center">Mandatory</div>',
-isiMandatory_C_P4_C :[
+const mandatory_C_P4_C1 = {
+judul_C_P4_C1 : '<div class="p-2 mb-2 text-white text-center">Mandatory</div>',
+isiMandatory_C_P4_C1 :[
 'Nama Pelapor :',
 'Tanggal dan Waktu Kejadian :',
 'Nomor Terdaftar MyPertamina dan LinkAja :',
@@ -16708,15 +16781,45 @@ isiMandatory_C_P4_C :[
 ]
 };
 
-function cetakMandatory_C_P4_C (isiMandatory_C_P4_C) {
-return`<ol>${isiMandatory_C_P4_C.map(mk => `<li>${mk} </li>`).join('')}</ol>`;
+function cetakMandatory_C_P4_C1 (isiMandatory_C_P4_C1) {
+return`<ol>${isiMandatory_C_P4_C1.map(mk => `<li>${mk} </li>`).join('')}</ol>`;
 }
 
-const el_C_P4_C = `<div class="mandatory"><h5 >${mandatory_C_P4_C.judul_C_P4_C}</h5>
-${cetakMandatory_C_P4_C(mandatory_C_P4_C.isiMandatory_C_P4_C)}</div>`;
+const el_C_P4_C1 = `<div class="mandatory"><h5 >${mandatory_C_P4_C1.judul_C_P4_C1}</h5>
+${cetakMandatory_C_P4_C1(mandatory_C_P4_C1.isiMandatory_C_P4_C1)}</div>`;
 
-function tampilMandatory_C_P4_C() {document.getElementById("C_P4_C").innerHTML = el_C_P4_C;}
-tampilMandatory_C_P4_C();
+function tampilMandatory_C_P4_C1() {document.getElementById("C_P4_C1").innerHTML = el_C_P4_C1;}
+tampilMandatory_C_P4_C1();
+
+const mandatory_C_P4_C2 = {
+judul_C_P4_C2 : '<span class="alert-primary">Note : Untuk Layanan Sosmed (Facebook, Twitter , Instagram)</span>',
+isiMandatory_C_P4_C2 :[
+'Nama Pelapor :',
+'Tanggal dan Waktu Kejadian :',
+'Nomor Terdaftar MyPertamina dan LinkAja :',
+'No KTP :',
+'Konfirmasi ke Pihak Bank : (Sudah/Belum)',
+'Nominal Top Up :',
+'Saldo Awal LinkAja :',
+'Saldo Awal MyPertamina :',
+'Detail Permasalahan :',
+'Email :',
+'CP :',
+'Infokan Screenshot Bukti :',
+'Infokan SLA'
+]
+};
+
+function cetakMandatory_C_P4_C2 (isiMandatory_C_P4_C2) {
+return`<ol>${isiMandatory_C_P4_C2.map(mk => `<li>${mk} </li>`).join('')}</ol>`;
+}
+
+const el_C_P4_C2 = `<div class="mandatory"><h5 >${mandatory_C_P4_C2.judul_C_P4_C2}</h5>
+${cetakMandatory_C_P4_C2(mandatory_C_P4_C2.isiMandatory_C_P4_C2)}</div>`;
+
+function tampilMandatory_C_P4_C2() {document.getElementById("C_P4_C2").innerHTML = el_C_P4_C2;}
+tampilMandatory_C_P4_C2();
+
 </script> 
 <div class="card ">
 <div class="card-body">
@@ -16742,6 +16845,7 @@ tampilMandatory_C_P4_C();
                   <a class="nav-item " id="nav-C_P5_A-tab" data-toggle="tab" href="#nav-C_P5_A" role="tab" aria-controls="nav-C_P5_A" aria-selected="true">ROOTCAUSE</a>
                   <a class="nav-item " id="nav-C_P5_B-tab" data-toggle="tab" href="#nav-C_P5_B" role="tab" aria-controls="nav-C_P5_B" aria-selected="false">TODOLIST</a>
                   <a class="nav-item " id="nav-C_P5_C-tab" data-toggle="tab" href="#nav-C_P5_C" role="tab" aria-controls="nav-C_P5_C" aria-selected="false">TIKET</a>
+                  <label >Update : 12/03/2020 18:53 </label> 
                 </div>
               </nav>
         </div>
@@ -16805,20 +16909,24 @@ document.getElementById("C_P5_B1").innerHTML = todolist_C_P5_B1.pageC_P5_B1;
 <!-- C_P5_C_konten -->    
 <div class="card ">
 <div class="card-body">
-<p class="card-text" id="C_P5_C"></p><p class="card-text text-right">3x24 Jam</p>
+<p class="card-text" id="C_P5_C1"></p>
+<p class="card-text" id="C_P5_C2"></p>
+<p class="card-text text-right">3x24 Jam</p>
 </div>
 </div>
 <div class="input-group">
 <textarea class="form-control" aria-label="With textarea" ></textarea><div class="input-group-prepend"><span class="input-group-text" >Note</span></div> 
 </div>
 <script> 
-const mandatory_C_P5_C = {
-judul_C_P5_C : '<div class="p-2 mb-2 text-white text-center">Mandatory</div>',
-isiMandatory_C_P5_C :[
+const mandatory_C_P5_C1 = {
+judul_C_P5_C1 : '<div class="p-2 mb-2 text-white text-center">Mandatory</div>',
+isiMandatory_C_P5_C1 :[
 'Nama Pelapor :',
 'Tanggal dan Waktu Kejadian :',
 'Nomor Tedaftar MyPertamina :',
 'No KTP :',
+'Tipe Handphone :',
+'OS Handphone :',
 'Keterangan Gagal :',
 'Detail Permasalahan :',
 'Email yang Terdaftar :',
@@ -16830,15 +16938,45 @@ isiMandatory_C_P5_C :[
 ]
 };
 
-function cetakMandatory_C_P5_C (isiMandatory_C_P5_C) {
-return`<ol>${isiMandatory_C_P5_C.map(mk => `<li>${mk} </li>`).join('')}</ol>`;
+function cetakMandatory_C_P5_C1 (isiMandatory_C_P5_C1) {
+return`<ol>${isiMandatory_C_P5_C1.map(mk => `<li>${mk} </li>`).join('')}</ol>`;
 }
 
-const el_C_P5_C = `<div class="mandatory"><h5 >${mandatory_C_P5_C.judul_C_P5_C}</h5>
-${cetakMandatory_C_P5_C(mandatory_C_P5_C.isiMandatory_C_P5_C)}</div>`;
+const el_C_P5_C1 = `<div class="mandatory"><h5 >${mandatory_C_P5_C1.judul_C_P5_C1}</h5>
+${cetakMandatory_C_P5_C1(mandatory_C_P5_C1.isiMandatory_C_P5_C1)}</div>`;
 
-function tampilMandatory_C_P5_C() {document.getElementById("C_P5_C").innerHTML = el_C_P5_C;}
-tampilMandatory_C_P5_C();
+function tampilMandatory_C_P5_C1() {document.getElementById("C_P5_C1").innerHTML = el_C_P5_C1;}
+tampilMandatory_C_P5_C1();
+
+const mandatory_C_P5_C2 = {
+judul_C_P5_C2 : '<span class="alert-primary">Note : Untuk Layanan Sosmed (Facebook, Twitter , Instagram)</span>',
+isiMandatory_C_P5_C2 :[
+'Nama Pelapor :',
+'Tanggal dan Waktu Kejadian :',
+'Nomor Tedaftar MyPertamina :',
+'No KTP :',
+'Tipe Handphone :',
+'OS Handphone :',
+'Keterangan Gagal :',
+'Detail Permasalahan :',
+'Email yang Terdaftar :',
+'CP :',
+'Infokan Screenshot Bukti :',
+'Infokan SLA'
+]
+};
+
+function cetakMandatory_C_P5_C2 (isiMandatory_C_P5_C2) {
+return`<ol>${isiMandatory_C_P5_C2.map(mk => `<li>${mk} </li>`).join('')}</ol>`;
+}
+
+const el_C_P5_C2 = `<div class="mandatory"><h5 >${mandatory_C_P5_C2.judul_C_P5_C2}</h5>
+${cetakMandatory_C_P5_C2(mandatory_C_P5_C2.isiMandatory_C_P5_C2)}</div>`;
+
+function tampilMandatory_C_P5_C2() {document.getElementById("C_P5_C2").innerHTML = el_C_P5_C2;}
+tampilMandatory_C_P5_C2();
+
+
 </script> 
 <div class="card ">
 <div class="card-body">
@@ -16864,6 +17002,7 @@ tampilMandatory_C_P5_C();
                   <a class="nav-item " id="nav-C_P6_A-tab" data-toggle="tab" href="#nav-C_P6_A" role="tab" aria-controls="nav-C_P6_A" aria-selected="true">ROOTCAUSE</a>
                   <a class="nav-item " id="nav-C_P6_B-tab" data-toggle="tab" href="#nav-C_P6_B" role="tab" aria-controls="nav-C_P6_B" aria-selected="false">TODOLIST</a>
                   <a class="nav-item " id="nav-C_P6_C-tab" data-toggle="tab" href="#nav-C_P6_C" role="tab" aria-controls="nav-C_P6_C" aria-selected="false">TIKET</a>
+                  <label >Update : 12/03/2020 19:51 </label> 
                 </div>
               </nav>
         </div>
@@ -17033,8 +17172,13 @@ document.getElementById("C_P6_B1").innerHTML = todolist_C_P6_B1.pageC_P6_B1;
 <div class="card-body">
 <p class="card-text" id="C_P6_C1"></p>
 <p class="card-text" id="C_P6_C2"></p>
+<p class="card-text text-right">3x24 Jam</p>
 <p class="card-text" id="C_P6_C3"></p>
+<p class="card-text text-right">3x24 Jam</p>
 <p class="card-text" id="C_P6_C4"></p>
+<p class="card-text" id="C_P6_C5"></p>
+<p class="card-text text-right">3x24 Jam</p>
+<p class="card-text" id="C_P6_C6"></p>
 <p class="card-text text-right">3x24 Jam</p>
 </div>
 </div>
@@ -17045,7 +17189,7 @@ document.getElementById("C_P6_B1").innerHTML = todolist_C_P6_B1.pageC_P6_B1;
 const mandatory_C_P6_C1 = {
 judul_C_P6_C1 : '<div class="p-2 mb-2 text-white text-center">Mandatory</div>',
 isiMandatory_C_P6_C1 :[
-'<div class="p-1 mb-1 bg-success text-white">1. Kendala Bukti pembayaran tidak keluar</div>',
+'<div>1. Kendala Bukti pembayaran tidak keluar</div>',
 'Nama Pelapor :',
 'Tanggal dan Waktu Kejadian :',
 'Nomor Tedaftar MyPertamina :',
@@ -17061,8 +17205,7 @@ isiMandatory_C_P6_C1 :[
 'Infokan Screenshot Keterangan Gagal dikirim ke email pcc135@pertamina.com',
 'Email yang digunakan :',
 'Subject Email yang dikirimkan :',
-'Infokan SLA',
-'<p class="text-right">3x24 Jam</p>'
+'Infokan SLA'
 ]
 };
 
@@ -17077,20 +17220,23 @@ function tampilMandatory_C_P6_C1() {document.getElementById("C_P6_C1").innerHTML
 tampilMandatory_C_P6_C1();
 
 const mandatory_C_P6_C2 = {
-judul_C_P6_C2 : '<div class="p-1 mb-1 bg-success text-white">2. Tidak Bisa menggunakan Scan QR Code</div>',
+judul_C_P6_C2 : '<span class="alert-primary">Note : Untuk Layanan Sosmed (Facebook, Twitter , Instagram)</span>',
 isiMandatory_C_P6_C2 :[
+'<div>1. Kendala Bukti pembayaran tidak keluar</div>',
 'Nama Pelapor :',
 'Tanggal dan Waktu Kejadian :',
 'Nomor Tedaftar MyPertamina :',
 'No KTP :',
 'Nomor SPBU :',
 'Alamat SPBU :',
-'Keterangan Gagal :',
+'Saldo Awal MyPertamina :',
+'Saldo Akhir MyPertamina :',
+'Jika saldo sudah terpotong, namun keterangan transaksi gagal, tanyakan apakah pelanggan membayar tunai juga ke pihak SPBU atau tidak :',
+'Sebelumnya berkendala atau tidak :',
 'Detail Permasalahan :',
-'Pada SPBU lain dapat berhasil atau tidak :',
 'CP :',
-'Infokan SLA',
-'<p class="text-right">3x24 Jam</p>'
+'Infokan Screenshot Keterangan Gagal :',
+'Infokan SLA'
 ]
 };
 
@@ -17105,8 +17251,36 @@ function tampilMandatory_C_P6_C2() {document.getElementById("C_P6_C2").innerHTML
 tampilMandatory_C_P6_C2();
 
 const mandatory_C_P6_C3 = {
-judul_C_P6_C3 : '<div class="p-1 mb-1 bg-success text-white">3. Untuk Kendala Gagal/Double Pembayaran</div>',
+judul_C_P6_C3 : '<div>2. Tidak Bisa menggunakan Scan QR Code</div>',
 isiMandatory_C_P6_C3 :[
+'Nama Pelapor :',
+'Tanggal dan Waktu Kejadian :',
+'Nomor Tedaftar MyPertamina :',
+'No KTP :',
+'Nomor SPBU :',
+'Alamat SPBU :',
+'Keterangan Gagal :',
+'Detail Permasalahan :',
+'Pada SPBU lain dapat berhasil atau tidak :',
+'CP :',
+'Infokan SLA'
+]
+};
+
+function cetakMandatory_C_P6_C3 (isiMandatory_C_P6_C3) {
+return`<ol>${isiMandatory_C_P6_C3.map(mk => `<li>${mk} </li>`).join('')}</ol>`;
+}
+
+const el_C_P6_C3 = `<div class="mandatory"><h5 >${mandatory_C_P6_C3.judul_C_P6_C3}</h5>
+${cetakMandatory_C_P6_C3(mandatory_C_P6_C3.isiMandatory_C_P6_C3)}</div>`;
+
+function tampilMandatory_C_P6_C3() {document.getElementById("C_P6_C3").innerHTML = el_C_P6_C3;}
+tampilMandatory_C_P6_C3();
+
+const mandatory_C_P6_C4 = {
+judul_C_P6_C4 : '<div class="p-2 mb-2 text-white text-center">Mandatory</div>',
+isiMandatory_C_P6_C4 :[
+'<div>3. Untuk Kendala Gagal/Double Pembayaran</div>',
 'Nama Pelapor :',
 'Tanggal dan Waktu Kejadian :',
 'Nomor Tedaftar MyPertamina dan LinkAja :',
@@ -17122,32 +17296,6 @@ isiMandatory_C_P6_C3 :[
 'Infokan Struk Transaksi, dan History Transaksi pada Aplikasi MyPertamina dikirim ke email pcc135@pertamina.com',
 'Email yang digunakan :',
 'Subject Email yang dikirimkan :',
-'Infokan SLA',
-'<p class="text-right">3x24 Jam</p>'
-]
-};
-
-function cetakMandatory_C_P6_C3 (isiMandatory_C_P6_C3) {
-return`<ol>${isiMandatory_C_P6_C3.map(mk => `<li>${mk} </li>`).join('')}</ol>`;
-}
-
-const el_C_P6_C3 = `<div class="mandatory"><h5 >${mandatory_C_P6_C3.judul_C_P6_C3}</h5>
-${cetakMandatory_C_P6_C3(mandatory_C_P6_C3.isiMandatory_C_P6_C3)}</div>`;
-
-function tampilMandatory_C_P6_C3() {document.getElementById("C_P6_C3").innerHTML = el_C_P6_C3;}
-tampilMandatory_C_P6_C3();
-
-const mandatory_C_P6_C4 = {
-judul_C_P6_C4 : '<div class="p-1 mb-1 bg-success text-white">4. Mesin EDC MyPertamina tidak bisa digunakan, misal rusak, tidak ada jaringan, tdk ada koneksi, dll</div>',
-isiMandatory_C_P6_C4 :[
-'Nama Pelapor :',
-'Tanggal dan Waktu Kejadian :',
-'Nomor SPBU :',
-'Alamat SPBU :',
-'Keterangan Gagal :',
-'Sebelumnya berkendala atau tidak :',
-'Detail Permasalahan :',
-'CP :',
 'Infokan SLA'
 ]
 };
@@ -17161,6 +17309,63 @@ ${cetakMandatory_C_P6_C4(mandatory_C_P6_C4.isiMandatory_C_P6_C4)}</div>`;
 
 function tampilMandatory_C_P6_C4() {document.getElementById("C_P6_C4").innerHTML = el_C_P6_C4;}
 tampilMandatory_C_P6_C4();
+
+const mandatory_C_P6_C5 = {
+judul_C_P6_C5 : '<span class="alert-primary">Note : Untuk Layanan Sosmed (Facebook, Twitter , Instagram)</span>',
+isiMandatory_C_P6_C5 :[
+'<div>3. Untuk Kendala Gagal/Double Pembayaran</div>',
+'Nama Pelapor :',
+'Tanggal dan Waktu Kejadian :',
+'Nomor Tedaftar MyPertamina dan LinkAja :',
+'No KTP :',
+'Nomor SPBU :',
+'Alamat SPBU :',
+'Keterangan Gagal :',
+'Saldo Awal MyPertamina :',
+'Saldo Akhir MyPertamina :',
+'Jika saldo sudah terpotong, namun keterangan transaksi gagal, tanyakan apakah pelanggan membayar tunai juga ke pihak SPBU atau tidak :',
+'Sebelumnya berkendala atau tidak :',
+'Detail Permasalahan :',
+'Infokan Struk Transaksi, dan History Transaksi pada Aplikasi MyPertamina :',
+'Infokan SLA'
+]
+};
+
+function cetakMandatory_C_P6_C5 (isiMandatory_C_P6_C5) {
+return`<ol>${isiMandatory_C_P6_C5.map(mk => `<li>${mk} </li>`).join('')}</ol>`;
+}
+
+const el_C_P6_C5 = `<div class="mandatory"><h5 >${mandatory_C_P6_C5.judul_C_P6_C5}</h5>
+${cetakMandatory_C_P6_C5(mandatory_C_P6_C5.isiMandatory_C_P6_C5)}</div>`;
+
+function tampilMandatory_C_P6_C5() {document.getElementById("C_P6_C5").innerHTML = el_C_P6_C5;}
+tampilMandatory_C_P6_C5();
+
+
+const mandatory_C_P6_C6 = {
+judul_C_P6_C6 : '<div >4. Mesin EDC MyPertamina tidak bisa digunakan, misal rusak, tidak ada jaringan, tdk ada koneksi, dll</div>',
+isiMandatory_C_P6_C6 :[
+'Nama Pelapor :',
+'Tanggal dan Waktu Kejadian :',
+'Nomor SPBU :',
+'Alamat SPBU :',
+'Keterangan Gagal :',
+'Sebelumnya berkendala atau tidak :',
+'Detail Permasalahan :',
+'CP :',
+'Infokan SLA'
+]
+};
+
+function cetakMandatory_C_P6_C6 (isiMandatory_C_P6_C6) {
+return`<ol>${isiMandatory_C_P6_C6.map(mk => `<li>${mk} </li>`).join('')}</ol>`;
+}
+
+const el_C_P6_C6 = `<div class="mandatory"><h5 >${mandatory_C_P6_C6.judul_C_P6_C6}</h5>
+${cetakMandatory_C_P6_C6(mandatory_C_P6_C6.isiMandatory_C_P6_C6)}</div>`;
+
+function tampilMandatory_C_P6_C6() {document.getElementById("C_P6_C6").innerHTML = el_C_P6_C6;}
+tampilMandatory_C_P6_C6();
 
 </script> 
 <div class="card ">
@@ -17342,6 +17547,7 @@ Ybs Atas Nama ... mengeluhkan sejak tanggal ... jam ... terjadi kendala tidak bi
                   <a class="nav-item " id="nav-C_P8_A-tab" data-toggle="tab" href="#nav-C_P8_A" role="tab" aria-controls="nav-C_P8_A" aria-selected="true">ROOTCAUSE</a>
                   <a class="nav-item " id="nav-C_P8_B-tab" data-toggle="tab" href="#nav-C_P8_B" role="tab" aria-controls="nav-C_P8_B" aria-selected="false">TODOLIST</a>
                   <a class="nav-item " id="nav-C_P8_C-tab" data-toggle="tab" href="#nav-C_P8_C" role="tab" aria-controls="nav-C_P8_C" aria-selected="false">TIKET</a>
+                  <label >Update : 12/03/2020 20:28 </label> 
                 </div>
               </nav>
         </div>
@@ -17399,16 +17605,18 @@ document.getElementById("C_P8_B1").innerHTML = todolist_C_P8_B1.pageC_P8_B1;
 <!-- C_P8_C_konten -->    
 <div class="card ">
 <div class="card-body">
-<p class="card-text" id="C_P8_C"></p><p class="card-text text-right">3x24 Jam</p>
+<p class="card-text" id="C_P8_C1"></p>
+<p class="card-text" id="C_P8_C2"></p>
+<p class="card-text text-right">3x24 Jam</p>
 </div>
 </div>
 <div class="input-group">
 <textarea class="form-control" aria-label="With textarea" ></textarea><div class="input-group-prepend"><span class="input-group-text" >Note</span></div> 
 </div>
 <script> 
-const mandatory_C_P8_C = {
-judul_C_P8_C : '<div class="p-2 mb-2 text-white text-center">Mandatory</div>',
-isiMandatory_C_P8_C :[
+const mandatory_C_P8_C1 = {
+judul_C_P8_C1 : '<div class="p-2 mb-2 text-white text-center">Mandatory</div>',
+isiMandatory_C_P8_C1 :[
 'Nama Pelapor :',
 'Tanggal dan Waktu Kejadian :',
 'Nomor Tedaftar MyPertamina :',
@@ -17426,15 +17634,44 @@ isiMandatory_C_P8_C :[
 ]
 };
 
-function cetakMandatory_C_P8_C (isiMandatory_C_P8_C) {
-return`<ol>${isiMandatory_C_P8_C.map(mk => `<li>${mk} </li>`).join('')}</ol>`;
+function cetakMandatory_C_P8_C1 (isiMandatory_C_P8_C1) {
+return`<ol>${isiMandatory_C_P8_C1.map(mk => `<li>${mk} </li>`).join('')}</ol>`;
 }
 
-const el_C_P8_C = `<div class="mandatory"><h5 >${mandatory_C_P8_C.judul_C_P8_C}</h5>
-${cetakMandatory_C_P8_C(mandatory_C_P8_C.isiMandatory_C_P8_C)}</div>`;
+const el_C_P8_C1 = `<div class="mandatory"><h5 >${mandatory_C_P8_C1.judul_C_P8_C1}</h5>
+${cetakMandatory_C_P8_C1(mandatory_C_P8_C1.isiMandatory_C_P8_C1)}</div>`;
 
-function tampilMandatory_C_P8_C() {document.getElementById("C_P8_C").innerHTML = el_C_P8_C;}
-tampilMandatory_C_P8_C();
+function tampilMandatory_C_P8_C1() {document.getElementById("C_P8_C1").innerHTML = el_C_P8_C1;}
+tampilMandatory_C_P8_C1();
+
+const mandatory_C_P8_C2 = {
+judul_C_P8_C2 : '<span class="alert-primary">Note : Untuk Layanan Sosmed (Facebook, Twitter , Instagram)</span>',
+isiMandatory_C_P8_C2 :[
+'Nama Pelapor :',
+'Tanggal dan Waktu Kejadian :',
+'Nomor Tedaftar MyPertamina :',
+'No KTP :',
+'Tipe Handphone :',
+'OS Handphone :',
+'Email yang Terdaftar :',
+'Keterangan Gagal :',
+'Detail Permasalahan :',
+'CP :',
+'Infokan screenshot kendala : ',
+'Infokan SLA'
+]
+};
+
+function cetakMandatory_C_P8_C2 (isiMandatory_C_P8_C2) {
+return`<ol>${isiMandatory_C_P8_C2.map(mk => `<li>${mk} </li>`).join('')}</ol>`;
+}
+
+const el_C_P8_C2 = `<div class="mandatory"><h5 >${mandatory_C_P8_C2.judul_C_P8_C2}</h5>
+${cetakMandatory_C_P8_C2(mandatory_C_P8_C2.isiMandatory_C_P8_C2)}</div>`;
+
+function tampilMandatory_C_P8_C2() {document.getElementById("C_P8_C2").innerHTML = el_C_P8_C2;}
+tampilMandatory_C_P8_C2();
+
 </script> 
 <div class="card ">
 <div class="card-body">
@@ -18212,6 +18449,7 @@ Ybs Atas Nama …Waktu kejadian Di tanggal ..Jam.. mengeluhkan sudah melakakukan
                   <a class="nav-item " id="nav-C_P15_A-tab" data-toggle="tab" href="#nav-C_P15_A" role="tab" aria-controls="nav-C_P15_A" aria-selected="true">ROOTCAUSE</a>
                   <a class="nav-item " id="nav-C_P15_B-tab" data-toggle="tab" href="#nav-C_P15_B" role="tab" aria-controls="nav-C_P15_B" aria-selected="false">TODOLIST</a>
                   <a class="nav-item " id="nav-C_P15_C-tab" data-toggle="tab" href="#nav-C_P15_C" role="tab" aria-controls="nav-C_P15_C" aria-selected="false">TIKET</a>
+                  <label >Update : 12/03/2020 20:54 </label> 
                 </div>
               </nav>
         </div>
@@ -18286,16 +18524,18 @@ document.getElementById("C_P15_B1").innerHTML = todolist_C_P15_B1.pageC_P15_B1;
 <!-- C_P15_C_konten -->    
 <div class="card ">
 <div class="card-body">
-<p class="card-text" id="C_P15_C"></p><p class="card-text text-right">3x24 Jam</p>
+<p class="card-text" id="C_P15_C1"></p>
+<p class="card-text" id="C_P15_C2"></p>
+<p class="card-text text-right">3x24 Jam</p>
 </div>
 </div>
 <div class="input-group">
 <textarea class="form-control" aria-label="With textarea" ></textarea><div class="input-group-prepend"><span class="input-group-text" >Note</span></div> 
 </div>
 <script> 
-const mandatory_C_P15_C = {
-judul_C_P15_C : '<div class="p-2 mb-2 text-white text-center">Mandatory</div>',
-isiMandatory_C_P15_C :[
+const mandatory_C_P15_C1 = {
+judul_C_P15_C1 : '<div class="p-2 mb-2 text-white text-center">Mandatory</div>',
+isiMandatory_C_P15_C1 :[
 'Nama Pelapor :',
 'Tanggal dan Waktu Kejadian :',
 'Nomor Tedaftar MyPertamina dan LinkAja :',
@@ -18313,15 +18553,44 @@ isiMandatory_C_P15_C :[
 ]
 };
 
-function cetakMandatory_C_P15_C (isiMandatory_C_P15_C) {
-return`<ol>${isiMandatory_C_P15_C.map(mk => `<li>${mk} </li>`).join('')}</ol>`;
+function cetakMandatory_C_P15_C1 (isiMandatory_C_P15_C1) {
+return`<ol>${isiMandatory_C_P15_C1.map(mk => `<li>${mk} </li>`).join('')}</ol>`;
 }
 
-const el_C_P15_C = `<div class="mandatory"><h5 >${mandatory_C_P15_C.judul_C_P15_C}</h5>
-${cetakMandatory_C_P15_C(mandatory_C_P15_C.isiMandatory_C_P15_C)}</div>`;
+const el_C_P15_C1 = `<div class="mandatory"><h5 >${mandatory_C_P15_C1.judul_C_P15_C1}</h5>
+${cetakMandatory_C_P15_C1(mandatory_C_P15_C1.isiMandatory_C_P15_C1)}</div>`;
 
-function tampilMandatory_C_P15_C() {document.getElementById("C_P15_C").innerHTML = el_C_P15_C;}
-tampilMandatory_C_P15_C();
+function tampilMandatory_C_P15_C1() {document.getElementById("C_P15_C1").innerHTML = el_C_P15_C1;}
+tampilMandatory_C_P15_C1();
+
+
+const mandatory_C_P15_C2 = {
+judul_C_P15_C2 : '<span class="alert-primary">Note : Untuk Layanan Sosmed (Facebook, Twitter , Instagram)</span>',
+isiMandatory_C_P15_C2 :[
+'Nama Pelapor :',
+'Tanggal dan Waktu Kejadian :',
+'Nomor Tedaftar MyPertamina dan LinkAja :',
+'No KTP :',
+'Tipe Handphone :',
+'OS Handphone :',
+'Keterangan Gagal :',
+'Detail Permasalahan :',
+'Email :',
+'CP :',
+'Infokan screenshot kendala :',
+'Infokan SLA'
+]
+};
+
+function cetakMandatory_C_P15_C2 (isiMandatory_C_P15_C2) {
+return`<ol>${isiMandatory_C_P15_C2.map(mk => `<li>${mk} </li>`).join('')}</ol>`;
+}
+
+const el_C_P15_C2 = `<div class="mandatory"><h5 >${mandatory_C_P15_C2.judul_C_P15_C2}</h5>
+${cetakMandatory_C_P15_C2(mandatory_C_P15_C2.isiMandatory_C_P15_C2)}</div>`;
+
+function tampilMandatory_C_P15_C2() {document.getElementById("C_P15_C2").innerHTML = el_C_P15_C2;}
+tampilMandatory_C_P15_C2();
 </script> 
 <div class="card ">
 <div class="card-body">
@@ -18347,6 +18616,7 @@ tampilMandatory_C_P15_C();
                   <a class="nav-item " id="nav-C_P16_A-tab" data-toggle="tab" href="#nav-C_P16_A" role="tab" aria-controls="nav-C_P16_A" aria-selected="true">ROOTCAUSE</a>
                   <a class="nav-item " id="nav-C_P16_B-tab" data-toggle="tab" href="#nav-C_P16_B" role="tab" aria-controls="nav-C_P16_B" aria-selected="false">TODOLIST</a>
                   <a class="nav-item " id="nav-C_P16_C-tab" data-toggle="tab" href="#nav-C_P16_C" role="tab" aria-controls="nav-C_P16_C" aria-selected="false">TIKET</a>
+                  <label >Update : 12/03/2020 21:02 </label> 
                 </div>
               </nav>
         </div>
@@ -18401,19 +18671,21 @@ document.getElementById("C_P16_B1").innerHTML = todolist_C_P16_B1.pageC_P16_B1;
 <!-- C_P16_C_konten -->    
 <div class="card ">
 <div class="card-body">
-<p class="card-text" id="C_P16_C"></p><p class="card-text text-right">3x24 Jam</p>
+<p class="card-text" id="C_P16_C1"></p>
+<p class="card-text" id="C_P16_C2"></p>
+<p class="card-text text-right">3x24 Jam</p>
 </div>
 </div>
 <div class="input-group">
 <textarea class="form-control" aria-label="With textarea" ></textarea><div class="input-group-prepend"><span class="input-group-text" >Note</span></div> 
 </div>
 <script> 
-const mandatory_C_P16_C = {
-judul_C_P16_C : '<div class="p-2 mb-2 text-white text-center">Mandatory</div>',
-isiMandatory_C_P16_C :[
+const mandatory_C_P16_C1 = {
+judul_C_P16_C1 : '<div class="p-2 mb-2 text-white text-center">Mandatory</div>',
+isiMandatory_C_P16_C1 :[
 'Nama Pelapor :',
 'Tanggal dan Waktu Kejadian :',
-'Nomor Tedaftar MyPertamina dan LinkAja :',
+'Nomor Terdaftar MyPertamina dan LinkAja :',
 'No KTP :',
 'Khusus untuk cashback 25% pastikan apakah pada bulan ini sudah mendapatkan :(Detail : misal Pada 15 Januari, Transaksi Rp 26.000, Cashback Rp 6.500)',
 'Jenis BBM :',
@@ -18426,15 +18698,42 @@ isiMandatory_C_P16_C :[
 ]
 };
 
-function cetakMandatory_C_P16_C (isiMandatory_C_P16_C) {
-return`<ol>${isiMandatory_C_P16_C.map(mk => `<li>${mk} </li>`).join('')}</ol>`;
+function cetakMandatory_C_P16_C1 (isiMandatory_C_P16_C1) {
+return`<ol>${isiMandatory_C_P16_C1.map(mk => `<li>${mk} </li>`).join('')}</ol>`;
 }
 
-const el_C_P16_C = `<div class="mandatory"><h5 >${mandatory_C_P16_C.judul_C_P16_C}</h5>
-${cetakMandatory_C_P16_C(mandatory_C_P16_C.isiMandatory_C_P16_C)}</div>`;
+const el_C_P16_C1 = `<div class="mandatory"><h5 >${mandatory_C_P16_C1.judul_C_P16_C1}</h5>
+${cetakMandatory_C_P16_C1(mandatory_C_P16_C1.isiMandatory_C_P16_C1)}</div>`;
 
-function tampilMandatory_C_P16_C() {document.getElementById("C_P16_C").innerHTML = el_C_P16_C;}
-tampilMandatory_C_P16_C();
+function tampilMandatory_C_P16_C1() {document.getElementById("C_P16_C1").innerHTML = el_C_P16_C1;}
+tampilMandatory_C_P16_C1();
+
+const mandatory_C_P16_C2 = {
+judul_C_P16_C2 : '<span class="alert-primary">Note : Untuk Layanan Sosmed (Facebook, Twitter , Instagram)</span>',
+isiMandatory_C_P16_C2 :[
+'Nama Pelapor :',
+'Tanggal dan Waktu Kejadian :',
+'Nomor Terdaftar MyPertamina dan LinkAja :',
+'No KTP :',
+'Khusus untuk cashback 25% pastikan apakah pada bulan ini sudah mendapatkan :(Detail : misal Pada 15 Januari, Transaksi Rp 26.000, Cashback Rp 6.500)',
+'Jenis BBM :',
+'Email :',
+'CP :',
+'Infokan Struk Transaksi, dan History Transaksi pada Aplikasi MyPertamina : ',
+'Infokan SLA'
+]
+};
+
+function cetakMandatory_C_P16_C2 (isiMandatory_C_P16_C2) {
+return`<ol>${isiMandatory_C_P16_C2.map(mk => `<li>${mk} </li>`).join('')}</ol>`;
+}
+
+const el_C_P16_C2 = `<div class="mandatory"><h5 >${mandatory_C_P16_C2.judul_C_P16_C2}</h5>
+${cetakMandatory_C_P16_C2(mandatory_C_P16_C2.isiMandatory_C_P16_C2)}</div>`;
+
+function tampilMandatory_C_P16_C2() {document.getElementById("C_P16_C2").innerHTML = el_C_P16_C2;}
+tampilMandatory_C_P16_C2();
+
 </script> 
 <div class="card ">
 <div class="card-body">
