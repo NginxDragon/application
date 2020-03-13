@@ -19,7 +19,7 @@
 <div class="header cf ">
 <div class="header_judul "><h1>Panduan Solusi Pertamina 135</h1></div>
 <div class="header_list"> 
-<label>Version 0.11.0</label>
+<label>Version 0.13.0</label>
 </div>
 </div>
 <!-- header -->
@@ -459,9 +459,9 @@ Pelanggan Atas Nama ... mengeluhkan di tanggal ... jam ... melakukan transaksi .
 <div class="card">
     <nav>
         <div class="nav nav-tabs" id="nav-tab" role="tablist">
-          <a class="nav-item nav-link active" id="nav-A_P2_A-tab" data-toggle="tab" href="#nav-A_P2_A" role="tab" aria-controls="nav-A_P2_A" aria-selected="true">ROOTCAUSE</a>
-          <a class="nav-item nav-link" id="nav-A_P2_B-tab" data-toggle="tab" href="#nav-A_P2_B" role="tab" aria-controls="nav-A_P2_B" aria-selected="false">TODOLIST</a>
-          <a class="nav-item nav-link" id="nav-A_P2_C-tab" data-toggle="tab" href="#nav-A_P2_C" role="tab" aria-controls="nav-A_P2_C" aria-selected="false">TIKET</a>
+          <a class="nav-item " id="nav-A_P2_A-tab" data-toggle="tab" href="#nav-A_P2_A" role="tab" aria-controls="nav-A_P2_A" aria-selected="true">ROOTCAUSE</a>
+          <a class="nav-item " id="nav-A_P2_B-tab" data-toggle="tab" href="#nav-A_P2_B" role="tab" aria-controls="nav-A_P2_B" aria-selected="false">TODOLIST</a>
+          <a class="nav-item " id="nav-A_P2_C-tab" data-toggle="tab" href="#nav-A_P2_C" role="tab" aria-controls="nav-A_P2_C" aria-selected="false">TIKET</a>
         </div>
       </nav>
 </div>
@@ -472,7 +472,7 @@ Pelanggan Atas Nama ... mengeluhkan di tanggal ... jam ... melakukan transaksi .
     <div class="tab-content" id="nav-tabContent">
         <div class="tab-pane fade show active" id="nav-A_P2_A" role="tabpanel" aria-labelledby="nav-A_P2_A-tab">
 <!-- A_P2_A_konten -->    
-<div class="p-2 mb-2 bg-danger text-white text-center">ROOTCAUSE</div>
+<div class="p-2 mb-2  text-white text-center">ROOTCAUSE</div>
 <p id="A_P2_A1"></p>
 <script>
 const rootcauseA_P2 = {
@@ -500,7 +500,7 @@ Complaint - Layanan BBM - Card RFID tidak bisa digunakan untuk pembayaran di SPB
         </div>
         <div class="tab-pane fade" id="nav-A_P2_B" role="tabpanel" aria-labelledby="nav-A_P2_B-tab">
 <!-- A_P2_B_konten -->    
-<div class="p-2 mb-2 bg-danger text-white text-center">TODOLIST</div>
+<div class="p-2 mb-2  text-white text-center">TODOLIST</div>
 <p id="A_P2_B1"></p>
 <script>
 const todolist_A_P2_B1 = {
@@ -544,7 +544,7 @@ document.getElementById("A_P2_B1").innerHTML =todolist_A_P2_B1.pageA_P2_B1;
 </div>
 <script>
 const mandatory_A_P2_C = {
-judul_A_P2_C : '<div class="p-2 mb-2 bg-success text-white text-center">Mandatory</div>',
+judul_A_P2_C : '<div class="p-2 mb-2  text-white text-center">Mandatory</div>',
 isiMandatory_A_P2_C :[
 'Nama Pelapor :', 
 'Tanggal dan Waktu Kejadian :',
@@ -570,7 +570,7 @@ tampilMandatory_A_P2_C();
 </script>
 <div class="card ">
 <div class="card-body">
-<div class="p-2 mb-2 bg-info text-white text-center">TEMPLATE</div>
+<div class="p-2 mb-2  text-white text-center">TEMPLATE</div>
 <p class="card-text">
 Ybs Atas Nama ... mengeluhkan pada tanggal ... jam ... tdk bisa menggunakan Kartu RFID di SPBU COCO nomor ... dengan lokasi di ... , dengan Nomor Kartu RFID ... mohon dibantu koordinasinya. CP …  
 </p>
@@ -18178,7 +18178,7 @@ tampilMandatory_C_P12_C();
                   <a class="nav-item " id="nav-C_P13_A-tab" data-toggle="tab" href="#nav-C_P13_A" role="tab" aria-controls="nav-C_P13_A" aria-selected="true">ROOTCAUSE</a>
                   <a class="nav-item " id="nav-C_P13_B-tab" data-toggle="tab" href="#nav-C_P13_B" role="tab" aria-controls="nav-C_P13_B" aria-selected="false">TODOLIST</a>
                   <a class="nav-item " id="nav-C_P13_C-tab" data-toggle="tab" href="#nav-C_P13_C" role="tab" aria-controls="nav-C_P13_C" aria-selected="false">TIKET</a>
-                  <label >Update : 09/03/2020  14:31</label>
+                  <label >Update : 13/03/2020 22:44</label>
                 </div>
               </nav>
         </div>
@@ -18239,7 +18239,6 @@ const todolist_C_P13_B1 = {pageC_P13_B1:`<div class="card">
     <p class="card-text">b. Tidak berhasil dan poin tidak berkurang : tolong pastikan keterangan error. Jika keterangan errornya gagal : cek signal dlm konsisi stabil, sarankan pelanggan mencoba kembali.
     </p>
   </div>
-
   <div class="card-body">
     <h5 class="card-title">B. Keterangan berhasil:</h5>
     <p class="card-text">a. Berhasil namun poin tidak berkurang : sarankan pelanggan menunggu 1x24 jam dan tidak disarankan mencoba berulang
@@ -18251,7 +18250,11 @@ const todolist_C_P13_B1 = {pageC_P13_B1:`<div class="card">
     <p class="card-text">b.2. Redeem lebih dr 7 hari, maka disampaikan bahwa kemungkinan pihak Pertamina mengalami kesulitan menghubungi pelapor apakah itu telp tdk diangkat atau sulit dihubungi, agent verifikasi alamat pengiriman (cek daftar pelanggan yang berhasil redeem poin) dan nomor yang bisa dihubungi, edukasikan update profil, dan buatkan laporan.
     </p>
   </div>
-</div>`};
+</div>
+<p class="note">
+Note : Jika pelanggan menukarkan berupa kaos/kemeja/jaket sertakan ukuran dan  alamat alamat lengkapnya
+</p>
+`};
 
 document.getElementById("C_P13_B1").innerHTML = todolist_C_P13_B1.pageC_P13_B1;
 </script>
