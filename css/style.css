@@ -161,6 +161,10 @@ p#C_P12_B1 ul li:nth-child(6){
     text-indent: 10px; 
 }
 
+p#C_P13_B1 p.note{
+    font-weight: bold;
+}
+
 p#C_P14_B1 ul li:nth-child(5){
     text-indent: 10px; 
 }
