@@ -1,3 +1,17 @@
 body{
     background-color: whitesmoke;
 }
+section h1{
+    font-size: 30px;
+    padding: 5px;
+}
+section h2{
+    font-size: 23px;
+    padding: 5px;
+}
+section ul{
+    padding: 5px;
+}
+section ul li{
+    padding: 3px;
+}
