@@ -3,19 +3,19 @@ body{
 }
 section h1{
     font-size: 30px;
-    padding: 5px;
-    background-color:#006CB8;
-    color: white;
-    width: 200px;
-    margin: 5px auto; 
+    background-color: azure;
     text-align: center;
+    display: block;
+    height: 50px;
+    line-height: 50px;
 }
 section h2{
-    font-size: 22px;
+    font-size: 20px;
+    margin: 5px;
     padding: 5px;
-    background-color: paleturquoise;
-    color: black;
-    width: 250px;
+    background-color: #006CB8;;
+    color: white;
+    width: 240px;
 }
 section ul{
     padding: 5px;
